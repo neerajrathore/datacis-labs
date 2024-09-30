@@ -15,7 +15,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative overflow-hidden flex flex-col items-center justify-center h-[45vh] bg-black text-white">
+    <div className="relative overflow-hidden flex flex-col items-center justify-center h-[60vh] bg-black text-white">
     {/* Floating Bubbles */}
     <motion.div
       className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full"
@@ -58,20 +58,17 @@ const HeroSection = () => {
       <h1 className="text-4xl sm:text-6xl lg:text-7xl tracking-wide">
         Data &amp; AI Services
       </h1>
-      <p className="mt-10 text-lg text-neutral-500 max-w-4xl">
+      <p className="mt-10 text-lg text-neutral-300 max-w-4xl">
         AI/ ML Platform and Custom Solutions
       </p>
-      <div className="flex justify-center my-10">
+      {/* <div className="flex justify-center my-10">
         <a
           href="#"
           className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
         >
-          Start for free
+          Read More
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
-          Documentation
-        </a>
-      </div>
+        </div> */}
     </div>
   </div>
   );

@@ -1,16 +1,12 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import sqlicon from "../assets/services_icons/sql-analytics-icon.svg"
+import machine from "../assets/services_icons/machine-learning-icon.svg"
+import dataengineer from "../assets/services_icons/icon-orange-data-engineer-persona.svg"
+
+import icon1 from "../assets/fwdataxislabswebsite_/Iceberg-logo.svg";
+import icon2 from "../assets/fwdataxislabswebsite_/Apache_Kafka.png";
+import icon3 from "../assets/fwdataxislabswebsite_/Apache_Spark_logo.svg";
+import icon4 from "../assets/fwdataxislabswebsite_/Elasticsearch_logo.svg";
 
 export const navItems = [
   { label: "Technical Services", href: "#" },
@@ -22,81 +18,55 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "John Doe",
-    company: "Stellar Solutions",
-    image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
+    user: "Open Lakehouse",
+    // company: "Stellar Solutions",
+    image: icon1,
+    text: "Apache Iceberg is an open table format for analytics workloads.",
   },
   {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
-    image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    user: "Event Streaming",
+    // company: "Blue Horizon Technologies",
+    image: icon2,
+    text: "Apache Kafka is an open-source platform for data pipelines, streaming analytics and data integration.",
   },
   {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
+    user: "Unified Analytics Engine",
+    // company: "Quantum Innovations",
+    image: icon3,
+    text: "Apache Spark is a multi-language engine for executing data engineering, data science and machine learning on single-node machine or clusters.",
   },
   {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
-  },
-  {
-    user: "Emily Davis",
-    company: "Synergy Systems",
-    image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
-  },
+    user: "Generative AI, Search",
+    // company: "Fusion Dynamics",
+    image: icon4,
+    text: "Elastic Stack is comprised of Elasticsearch, Logstash & Kibana (ELK Stack) for securely taking data from any source to search, analyze and visualize.",
+  }
 ];
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
-    description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+    icon: <img src={sqlicon} alt="Data Analytics Icon" />,
+    text: "Data Analytics",
+    description: "SQL data warehouse to derive meaningful actionable insights.",
   },
   {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
-    description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+    icon: <img src={dataengineer} alt="Data Engineering Icon" />,
+    text: "Data Engineering",
+    description: "Data Ingestion from various sources and pipelines to transform data.",
   },
   {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
-    description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
-  },
-  {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
+    text: "Data Science",
+    icon: <img src={machine} alt="Data Science Icon" />,
+    description: (
+      <>
+        Custom AI & ML models for predictive analytics.
+        <br />
+        ML Engineering for model deployment.
+      </>
+    ),
+  }
 ];
+
 
 export const checklistItems = [
   {
@@ -154,23 +124,30 @@ export const pricingOptions = [
   },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Products" },
-  { href: "#", text: "Differentiators" },
-  { href: "#", text: "Industries" },
-  { href: "#", text: "Case Studies" },
+export const ServicesLinks = [
+  { href: "#", label: "Data Analytics" },
+  { href: "#", label: "Data Engineering" },
+  { href: "#", label: "Data Science" },
 ];
 
-export const platformLinks = [
-  { href: "#", text: "Contact Us" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+export const TechnologiesLinks = [
+  { href: "#", label: "Open Lakehouse" },
+  { href: "#", label: "Event Streaming" },
+  { href: "#", label: "Unified Analytics Engine" },
+  { href: "#", label: "Generative AI, Search" },
 ];
 
-export const communityLinks = [
-  { href: "#", text: "Who We Are" },
-  { href: "#", text: "News & Events" },
-  { href: "#", text: "Blogs" },
-  { href: "#", text: "Office Locations" },
+export const SolutionsLinks = [
+  { href: "#", label: "Data Lakehouse Platform" },
+  { href: "#", label: "Multi-Modal Database" },
+  { href: "#", label: "Search AI Platform" },
+];
+export const ResourcesLinks = [
+  { href: "#", label: "Blogs" },
+  { href: "#", label: "Use Cases" },
+  { href: "#", label: "White Papers" },
+];
+export const CompanyLinks = [
+  { href: "#", label: "About Us" },
+  { href: "#", label: "Contact Us" },
 ];

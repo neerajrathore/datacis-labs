@@ -1,25 +1,50 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import logos from "../assets/dataxis_logo_left_orange.svg";
+
+import { FaFacebook, FaInstagram, FaLinkedin, FaMediumM, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const navItemss = [
   { href: "#", label: "Home" },
   {
     href: "#", label: "Services", submenu: [
-      { href: "#", label: "Web Development" },
-      { href: "#", label: "Mobile App Development" },
-      { href: "#", label: "UI/UX Design" }
+      { href: "#", label: "Data Analytics" },
+      { href: "#", label: "Data Engineering" },
+      { href: "#", label: "Data Science" }
     ]
   },
-  { href: "#", label: "About" },
   {
-    href: "#", label: "Products", submenu: [
-      { href: "#", label: "SaaS Platform" },
-      { href: "#", label: "AI Solutions" }
+    href: "#", label: "Technologies", submenu: [
+      { href: "#", label: "Open Lakehouse" },
+      { href: "#", label: "Event Streaming" },
+      { href: "#", label: "Unified Analytics Engine" },
+      { href: "#", label: "Generative AI, Search" },
     ]
   },
-  { href: "#", label: "Contact" }
+  {
+    href: "#", label: "Solutions", submenu: [
+      { href: "#", label: "Data Lakehouse Platform" },
+      { href: "#", label: "Multi-Modal Database" },
+      { href: "#", label: "Search AI Platform" },
+      ]
+  }
+  ,
+  {
+    href: "#", label: "Resources", submenu: [
+      { href: "#", label: "Blogs" },
+      { href: "#", label: "Use Cases" },
+      { href: "#", label: "White Papers" },
+      ]
+  }
+  ,
+  {
+    href: "#", label: "Company", submenu: [
+      { href: "#", label: "About Us" },
+      { href: "#", label: "Contact Us" },
+      ]
+  }
+
 ];
 
 const Navbar = () => {
@@ -40,11 +65,10 @@ const Navbar = () => {
       <div className="bg-[#000] py-4 text-white">
         <div className="container mx-auto flex justify-end items-center">
           <div className="flex space-x-6">
-            <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
-            <a href="https://youtube.com" aria-label="YouTube"><FaYoutube /></a>
             <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
+            
+            <a href="https://Medium.com" aria-label="Medium"><FaMediumM /></a>
+            <a href="https://youtube.com" aria-label="YouTube"><FaYoutube /></a>
           </div>
         </div>
       </div>
@@ -53,8 +77,8 @@ const Navbar = () => {
         <div className="container px-4 mx-auto relative lg:text-sm">
           <div className="flex justify-between items-center">
             <div className="flex items-center flex-shrink-0">
-              <img className="h-10 w-10 mr-2" src={logo} alt="Logo" />
-              <span className="text-xl tracking-tight">VirtualR</span>
+              <img className="h-10 w-" src={logos} alt="Logo" />
+              {/* <span className="text-xl tracking-tight">VirtualR</span> */}
             </div>
 
             {/* Desktop Navigation */}
@@ -69,7 +93,7 @@ const Navbar = () => {
                     <ul className={`absolute left-0 mt-2 w-48 bg-white overflow-hidden shadow-lg border rounded-lg hidden group-hover:block`}>
                       {item.submenu.map((subItem, subIndex) => (
                         <li key={subIndex} className="hover:bg-gray-100">
-                          <a className="block px-4 py-2 hover:text-[#D32F2E] rounded-lg" href={subItem.href}>
+                          <a className="block px-4 py-2 hover:text-[#FF6C2F] rounded-lg" href={subItem.href}>
                             {subItem.label}
                           </a>
                         </li>
@@ -82,7 +106,7 @@ const Navbar = () => {
 
             {/* Desktop Button */}
             <div className="hidden lg:flex justify-center space-x-12 items-center">
-              <a href="#" className="py-2 px-3 text-white bg-[#D32F2E] hover:shadow-xl rounded-full hover:text-gray-100 transition-all">
+              <a href="#" className="py-2 px-3 text-white bg-[#FF6C2F] hover:shadow-xl rounded-full hover:text-gray-100 transition-all">
                 Get in Touch
               </a>
             </div>
@@ -103,7 +127,7 @@ const Navbar = () => {
                   <li key={index}>
                     <div
                       onClick={() => toggleSubmenu(index)} // Toggle submenu on click
-                      className="flex justify-between items-center cursor-pointer text-lg font-medium hover:text-[#D32F2E]"
+                      className="flex justify-between items-center cursor-pointer text-lg font-medium hover:text-[#FF6C2F]"
                     >
                       <span>{item.label}</span>
                       {item.submenu && (
@@ -117,7 +141,7 @@ const Navbar = () => {
                       <ul className="ml-4 mt-2 space-y-2">
                         {item.submenu.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <a href={subItem.href} className="text-sm hover:text-[#D32F2E]">{subItem.label}</a>
+                            <a href={subItem.href} className="text-sm hover:text-[#FF6C2F]">{subItem.label}</a>
                           </li>
                         ))}
                       </ul>
