@@ -1,10 +1,10 @@
-<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="74" height="74" viewBox="0 0 74 74" fill="blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0)">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-5" y="-7" width="93" height="87">
 <path d="M-4.51172 -6.31702H87.5371V79.5952H-4.51172V-6.31702Z" fill="url(#pattern0)"/>
 </mask>
 <g mask="url(#mask0)">
-<path d="M-59.7412 -55.4098H143.789V121.528H-59.7412V-55.4098Z" fill="#0B9ACE"/>
+<path d="M-59.7412 -55.4098H143.789V121.528H-59.7412V-55.4098Z" fill="#FF6C2F"/>
 </g>
 </g>
 <defs>

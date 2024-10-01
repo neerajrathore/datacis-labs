@@ -93,33 +93,27 @@ export const checklistItems = [
 
 export const pricingOptions = [
   {
-    title: "Free",
-    price: "$0",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+    title: "Data Lakehouse Platform",
+    sn: "1",
+    img: "3",
+    discription: [
+      "Open source data lakehouse platform built on Apache Iceberg. Apache Spark & Apache Parquet.",
     ],
   },
   {
-    title: "Pro",
-    price: "$10",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+    title: "Multi-Modal Database",
+    price: "2",
+    img: "3",
+    discription: [
+      "Improved query performance & real-time analytics on transactional data without ETL to separate analytical database.",
     ],
   },
   {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+    title: "Elastic Search AI Platform",
+    price: "3",
+    img: "3",
+    discription: [
+      "The platform is built on ELK Stack for building transformative applications, proactively resolving observability issues and addressing complex security threats.",
     ],
   },
 ];

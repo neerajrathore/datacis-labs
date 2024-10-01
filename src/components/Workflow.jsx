@@ -5,12 +5,19 @@ import { checklistItems } from "../constants";
 const Workflow = () => {
   return (
     <div className="mt-20 px-28">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
-        Accelerate your{" "}
-        <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
+      <div className="text-center">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-5 lg:my-10">
+          Services
+          <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
           coding workflow.
         </span>
-      </h2>
+        </h2>
+        <div className=" w-full items-center justify-center max-w-2xl m-auto">
+          <p className="text-2xl sm:text-5xl lg:text-3xl my-3 tracking-wide">
+            We have skilled team of professionals to deliver Data & AI services.
+          </p>
+        </div>
+      </div>
       <div className="flex flex-wrap justify-center">
         <div className="p-2 w-full lg:w-1/2">
           <img src={codeImg} alt="Coding" />
