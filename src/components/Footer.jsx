@@ -22,31 +22,9 @@ const Footer = () => {
           <div className="col-span-1 lg:col-span-2">
             <div className="flex flex-row gap-1 items-center">
               <img src={img} alt="Footer Logo" className="h-8" />
-              <h1 className="text-4xl font-bold">Dataxis Labs</h1>
+              <h1 className="text-4xl font-bold">Dataxis Labs LLP</h1>
             </div>
             <div className="mt-2 flex items-start gap-2 justify-start py-2">
-              <motion.div
-                initial={{ y: 0 }}
-                animate={{ y: [-10, 0, -10] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 2,
-                  ease: "easeInOut",
-                }}
-                className="relative flex justify-center items-center"
-              >
-                <motion.div
-                  initial={{ scale: 1 }}
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 1.5,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <IoLocationSharp className="text-2xl text-[#FF6C2F]" />
-                </motion.div>
-              </motion.div>
               <p className="max-w-md">
                  SB-184 A, Bapu Nagar <br />
                 Jawahar Lal Nehru Marg <br />
@@ -55,53 +33,11 @@ const Footer = () => {
             </div>
 
             <div className="mt-4 flex items-center gap-4">
-              <motion.div
-                initial={{ y: 0 }}
-                animate={{ y: [-10, 0, -10] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 2,
-                  ease: "easeInOut",
-                }}
-                className="relative flex justify-center items-center"
-              >
-                <motion.div
-                  initial={{ scale: 1 }}
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 1.5,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <FaEnvelope className="text-2xl text-[#FF6C2F]" />
-                </motion.div>
-              </motion.div>
+                 <FaEnvelope className="text-2xl text-[#FF6C2F]" />
               info@dataxis.io
             </div>
             <div className="mt-4 flex items-center gap-4">
-              <motion.div
-                initial={{ y: 0 }}
-                animate={{ y: [-10, 0, -10] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 2,
-                  ease: "easeInOut",
-                }}
-                className="relative flex justify-center items-center"
-              >
-                <motion.div
-                  initial={{ scale: 1 }}
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 1.5,
-                    ease: "easeInOut",
-                  }}
-                >
-                  <GrLike className="text-2xl text-[#FF6C2F]" />
-                </motion.div>
-              </motion.div>
+                 <GrLike className="text-2xl text-[#FF6C2F]" />
               <div className="end-1 mb-4 w-full lg:w-auto flex">
                 <div className="border-[#343741] border-2  cursor-pointer h-8 w-8  flex items-center justify-center  text-white hover:text-[#FF6C2F] hover:border-[#FF6C2F] transition-all">
                   <FaLinkedinIn size={12} />

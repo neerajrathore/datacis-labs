@@ -5,7 +5,7 @@ import logos from "../assets/dataxis_logo_left_orange.svg";
 import { FaLinkedin, FaMediumM, FaYoutube } from "react-icons/fa";
 
 const navItemss = [
-  { href: "#", label: "Home" },
+  // { href: "#", label: "Home" },
   {
     href: "#",
     label: "Services",

@@ -3,11 +3,11 @@ import { pricingOptions } from "../../constants";
 
 const ComponentName = () => {
   return (
-    <section className="py-12  sm:py-16 lg:py-20">
+    <section className="py-12 bg-white rounded-3xl sm:py-16 lg:py-20  ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="text-center">
-            <h2 className="mt-4 text-3xl  text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+            <h2 className="mt-4 text-[40px] text-[#ff6c2f] sm:text-[40px] xl:text-[70px] font-bold">
               Solutions
             </h2>
             <p className="text-lg font-medium text-gray-600 font-pj">
@@ -31,9 +31,9 @@ const ComponentName = () => {
               {pricingOptions.map((option, index) => (
                 <div
                   key={index}
-                  className="flex flex-col overflow-hidden shadow-xl"
+                  className="flex flex-col overflow-hidden  rounded-3xl shadow-xl"
                 >
-                  <div className="flex flex-col justify-between flex-1 p-6 rounded-lg bg-white lg:py-8 lg:px-7">
+                  <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                     <div className="flex items-center mt-8">
                       {/* <img
                         className="flex-shrink-0 object-cover rounded-full w-11 h-11"
@@ -51,7 +51,7 @@ const ComponentName = () => {
                     </div>
                     <div className="flex-1">
                       <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 font-pj">
+                        <p className=" text-gray-600  text-lg">
                           {option.discription}
                         </p>
                       </blockquote>
