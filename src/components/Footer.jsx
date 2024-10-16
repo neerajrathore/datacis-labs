@@ -7,9 +7,6 @@ import {
 } from "../constants";
 import { FaLinkedinIn, FaYoutube, FaEnvelope, FaMediumM } from "react-icons/fa";
 import { GrLike } from "react-icons/gr";
-import { IoLocationSharp } from "react-icons/io5";
-import { motion } from "framer-motion";
-// import img from "../assets/dataxis_logo_left_orange.svg";
 import img from "../assets/d_logo_orange.svg";
 
 const Footer = () => {

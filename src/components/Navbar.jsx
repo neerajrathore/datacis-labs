@@ -47,8 +47,8 @@ const navItemss = [
     href: "#",
     label: "Company",
     submenu: [
-      { href: "#", label: "About Us" },
-      { href: "#", label: "Contact Us" },
+      { href: "/about", label: "About Us" },
+      { href: "/contact", label: "Contact Us" },
     ],
   },
 ];
@@ -88,8 +88,8 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 bg-[#121212]  py-2 text-white backdrop-blur-lg border-t border-[#5a5a5a]">
         <div className="container px-4 mx-auto relative lg:text-sm">
           <div className="flex justify-between items-center ">
-            <div className="flex items-center flex-shrink-0">
-              <img className="h-10  w-36 object-fill" src={logos} alt="Logo" />
+            <div className="flex items-center flex-shrink-0  cursor-pointer">
+              <img className="h-10  w-36 object-fill" src={logos} alt="Logo" href="/" />
             </div>
 
             {/* Desktop Navigation */}
@@ -123,7 +123,7 @@ const Navbar = () => {
             {/* Desktop Button */}
             <div className="hidden lg:flex justify-center space-x-12 items-center">
               <a
-                href="#"
+                href="/contact"
                 className="py-2 px-3 text-white bg-[#FF6C2F] hover:shadow-xl rounded-md hover:text-gray-100 transition-all"
               >
                 Get in Touch

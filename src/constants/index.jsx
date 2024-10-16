@@ -7,6 +7,7 @@ import icon1 from "../assets/fwdataxislabswebsite_/Iceberg-logo.svg";
 import icon2 from "../assets/fwdataxislabswebsite_/Apache_Kafka.png";
 import icon3 from "../assets/fwdataxislabswebsite_/Apache_Spark_logo.svg";
 import icon4 from "../assets/fwdataxislabswebsite_/Elasticsearch_logo.svg";
+import icon5 from "../assets/fwdataxislabswebsite_/AirflowLogo.png";
 
 export const navItems = [
   { label: "Technical Services", href: "#" },
@@ -36,11 +37,17 @@ export const testimonials = [
     text: "Apache Spark is a multi-language engine for executing data engineering, data science and machine learning on single-node machine or clusters.",
   },
   {
+    user: "Apache Airflow",
+    // company: "Fusion Dynamics",
+    image: icon5,
+    text: "Apache Airflow is is a platform to programmatically author, schedule and monitor workflows.",
+  },
+  {
     user: "Generative AI, Search",
     // company: "Fusion Dynamics",
     image: icon4,
     text: "Elastic Stack is comprised of Elasticsearch, Logstash & Kibana (ELK Stack) for securely taking data from any source to search, analyze and visualize.",
-  }
+  },
 ];
 
 export const features = [
