@@ -10,19 +10,19 @@ const navItemss = [
     href: "#",
     label: "Services",
     submenu: [
-      { href: "#", label: "Data Analytics" },
-      { href: "#", label: "Data Engineering" },
-      { href: "#", label: "Data Science" },
+      { href: "/services/data-analytics", label: "Data Analytics" },
+      { href: "/services/data-engineering", label: "Data Engineering" },
+      { href: "/services/data-science", label: "Data Science" },
     ],
   },
   {
     href: "#",
     label: "Technologies",
     submenu: [
-      { href: "#", label: "Open Lakehouse" },
-      { href: "#", label: "Event Streaming" },
-      { href: "#", label: "Unified Analytics Engine" },
-      { href: "#", label: "Generative AI, Search" },
+      { href: "/technologies/open-lakehouse", label: "Open Lakehouse" },
+      { href: "/technologies/event-streaming", label: "Event Streaming" },
+      { href: "/technologies/unified-analytics-engine", label: "Unified Analytics Engine" },
+      { href: "/technologies/generative-ai-search", label: "Generative AI, Search" },
     ],
   },
   {
